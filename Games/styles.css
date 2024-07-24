@@ -1,0 +1,137 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(135deg, #ac08d4, #000000);
+  color: #fff;
+}
+
+.container {
+  text-align: center;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  box-shadow: 0 8px 32px 0 rgba(255, 0, 0, 0.37);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+h1 {
+  margin-bottom: 20px;
+  font-size: 36px;
+}
+
+.options,
+.difficulty-options {
+  margin-bottom: 20px;
+}
+
+.option-button,
+.difficulty-button {
+  margin: 0 10px;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  background: rgba(255, 255, 255, 0.2);
+  color: #fff;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.option-button:hover,
+.difficulty-button:hover {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.option-button.active,
+.difficulty-button.active {
+  background: rgba(255, 255, 255, 0.5);
+}
+
+.name-inputs {
+  display: none;
+  margin-bottom: 20px;
+}
+
+.name-inputs div {
+  display: none;
+  margin-bottom: 10px;
+}
+
+.name-inputs input {
+  margin: 0 10px;
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+}
+
+.name-inputs button {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  background: rgba(255, 255, 255, 0.2);
+  color: #fff;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.name-inputs button:hover {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  grid-gap: 10px;
+  margin: 0 auto;
+}
+
+.cell {
+  width: 100px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 32px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.cell:hover {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.status {
+  margin-top: 20px;
+  font-size: 18px;
+}
+
+#reset {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  background: rgba(255, 255, 255, 0.2);
+  color: #fff;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+#reset:hover {
+  background: rgba(255, 255, 255, 0.3);
+}
